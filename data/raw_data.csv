@@ -1,0 +1,202 @@
+﻿date,tank_type,tier,tank,outcome,survived,map,damage_dealt,damage_spotting,damage_blocked,experience_earned,bonds_earned,kills,credits
+18/10/2017,medium,8,FV4202,win,1,Arctic,2338,1216,710,1523,0,1,
+18/10/2017,medium,7,T-43,win,1,Redshire,873,775,950,1169,0,1,
+18/10/2017,heavy,10,T110E5,win,0,Lakeville,4233,1736,2700,1281,2,0,
+18/10/2017,tank destroyer,7,T25/2,lost,0,Murovanka,0,0,300,103,0,0,
+18/10/2017,tank destroyer,7,T25/2,win,0,El Halluf,583,0,0,698,0,1,
+18/10/2017,medium,9,M46 Patton,lost,0,Pilsen,3148,574,490,708,0,0,
+18/10/2017,tank destroyer,10,Jp Pz E100,lost,0,Nebelburg,1178,0,390,273,0,0,
+18/10/2017,medium,10,M48 Patton,win,1,Kharkov,3105,0,1140,1163,2,1,
+18/10/2017,tank destroyer,8,Rhm-B WT,lost,0,Steppes,507,102,0,268,0,0,
+18/10/2017,heavy,10,T110E5,lost,0,Nebelburg,1176,263,320,475,0,0,
+18/10/2017,light,9,AMX 13 90,win,0,Mines,238,460,0,821,3,0,
+18/10/2017,medium,8,FV4202,win,1,Ensk,1644,1594,300,1608,0,1,
+19/10/2017,heavy,10,T110E5,win,0,Nebelburg,2018,1372,750,1211,8,0,
+19/10/2017,medium,7,T-43,win,1,Stalingrad,327,173,0,953,0,1,
+19/10/2017,tank destroyer,7,T25/2,loss,0,Westfield,476,82,0,239,0,0,
+19/10/2017,heavy,8,T34,loss,0,Swamp,0,790,193,291,0,0,
+19/10/2017,SPG,8,M40/M43,win,1,Paris,452,0,0,786,0,1,
+19/10/2017,heavy,10,T110E5,loss,0,Ruinberg,1244,209,0,300,0,0,
+20/10/2017,tank destroyer,8,ISU-152,win,1,Lakeville,2806,0,0,1278,0,3,
+20/10/2017,medium,8,FV4202,win,1,Abbey,1190,274,240,876,0,0,
+20/10/2017,medium,7,T-43,loss,0,Murovanka,0,0,0,83,0,0,
+20/10/2017,tank destroyer,5,Archer,loss,0,Westfield,276,0,0,143,0,0,
+20/10/2017,tank destroyer,7,T25/2,loss,0,Highway,653,0,0,305,0,1,
+20/10/2017,tank destroyer,5,Archer,loss,0,El Halluf,160,0,0,119,0,0,
+21/10/2017,light,9,AMX 13 90,win,1,Redshire,1932,3440,0,1607,4,4,35633
+21/10/2017,medium,8,FV4202,loss,0,Mountain Pass,890,0,390,267,0,0,18065
+21/10/2017,light,9,AMX 13 90,win,0,Fjords,1393,1107,0,1107,0,1,14588
+21/10/2017,medium,7,T-43,win,1,Malinovka,1590,220,892,1110,0,1,29289
+21/10/2017,heavy,10,T110E5,draw,0,Nebelburg,1456,1264,400,615,4,1,-7528
+21/10/2017,tank destroyer,7,T25/2,win,0,Ruinberg,213,16,0,603,0,0,4244
+21/10/2017,tank destroyer,8,Rhm-B WT,win,1,Karelia,2218,0,0,1089,0,3,20740
+21/10/2017,tank destroyer,5,Archer,loss,0,Swamp,317,993,0,446,0,2,11264
+21/10/2017,SPG,8,M40/M43,loss,0,Stalingrad,192,154,0,233,0,0,-7033
+21/10/2017,heavy,10,T110E5,win,0,Nebelburg,2469,1513,0,1211,8,0,-637
+21/10/2017,medium,9,M46 Patton,loss,0,Redshire,2475,1871,0,717,0,1,11695
+21/10/2017,tank destroyer,10,Jp Pz E100,win,1,Abbey,3297,0,0,1005,0,2,23455
+21/10/2017,heavy,8,T34,win,1,El Halluf,1913,0,870,1206,0,1,39823
+21/10/2017,medium,6,Strv 74,loss,0,Malinovka,175,191,240,189,0,0,3197
+21/10/2017,medium,10,M48 Patton,loss,0,Ruinberg,1725,2066,800,488,0,1,-1628
+21/10/2017,medium,8,T-54 mod.1,win,0,Sacred Valley,1451,1266,320,1350,0,1,60798
+21/10/2017,tank destroyer,9,Jagtiger,win,1,Fishermans Bay,2252,1262,0,1320,0,2,21224
+21/10/2017,medium,6,Strv 74,win,1,Lakeville,1111,98,0,939,0,1,18636
+21/10/2017,medium,10,M48 Patton,loss,1,Airfield,1140,338,0,305,0,0,-9666
+21/10/2017,medium,8,FV4202,loss,0,Fishermans Bay,0,0,0,94,0,0,8969
+21/10/2017,SPG,9,M53/M55,loss,0,Prokhorovka,1321,0,0,308,0,1,-6225
+21/10/2017,SPG,9,M53/M55,loss,0,Mountain Pass,591,1019,0,299,0,0,-5007
+21/10/2017,medium,8,T-54 mod.1,loss,0,Pilsen,796,0,1600,386,0,1,20720
+22/10/2017,medium,8,T-54 mod.1,win,0,Live Oaks,805,219,550,864,0,0,31802
+22/10/2017,medium,6,Cromwell B,loss,0,Steppes,866,0,0,440,0,2,19910
+22/10/2017,medium,8,T-54 mod.1,win,0,Sacred Valley,211,0,440,725,0,0,20657
+22/10/2017,medium,6,Cromwell B,loss,0,Mines,147,753,0,305,0,0,15567
+22/10/2017,medium,8,FV4202,loss,0,Himmelsdorf,1312,421,490,452,0,0,25578
+22/10/2017,medium,8,T25 Pilot 1,loss,0,Airfield,1028,133,170,440,0,0,25296
+22/10/2017,medium,8,T-54 mod.1,win,0,Lakeville,984,62,1200,957,0,0,29269
+22/10/2017,heavy,8,T34,win,1,Erlenberg,1907,442,0,1191,0,1,48996
+22/10/2017,medium,6,Cromwell B,loss,0,Fiery Salient,146,214,0,134,0,0,9060
+22/10/2017,medium,8,T25 Pilot 1,loss,0,Sand River,710,694,240,471,3,0,35652
+22/10/2017,heavy,8,T34,win,1,Redshire,2839,134,240,1374,0,0,45848
+22/10/2017,medium,8,T-54 mod.1,win,1,El Halluf,1761,1210,0,1464,1,0,66325
+22/10/2017,medium,8,T25 Pilot 1,win,0,Malinovka,1031,243,800,821,0,0,32714
+22/10/2017,medium,8,T-54 mod.1,win,0,Murovanka,237,0,0,569,0,0,19361
+22/10/2017,heavy,8,T34,win,0,Fishermans Bay,410,122,390,683,0,0,24437
+22/10/2017,medium,8,FV4202,loss,0,Pilsen,971,214,2610,621,0,0,11617
+22/10/2017,medium,8,T25 Pilot 1,win,0,Mines,475,403,0,890,0,0,16386
+25/10/2017,light,9,AMX 13 90,loss,0,Himelsdorf,1641,0,0,462,0,0,6583
+25/10/2017,medium,7,T-43,win,1,Murovanka,2009,546,440,1182,0,2,24181
+25/10/2017,SPG,8,M40/M43,win,0,Airfield,850,1342,0,854,0,0,5340
+25/10/2017,tank destroyer,10,Jp Pz E100,win,1,Nebelburg,1424,891,2160,1185,8,2,-5666
+28/10/2017,heavy,10,T110E5,lost,0,Swamp,2221,0,2310,375,0,1,-5605
+28/10/2017,tank destroyer,7,T25/2,draw,0,Sacred Valley,250,0,0,261,0,0,1034
+28/10/2017,tank destroyer,8,Rhm-B WT,loss,0,Lakeville,491,105,0,264,0,0,-1488
+28/10/2017,light,9,AMX 13 90,loss,0,Stalingrad,1726,0,0,503,0,1,3247
+28/10/2017,medium,8,T-54 mod.1,win,0,El Halluf,1447,1143,1270,1287,0,1,59691
+12/11/2017,tank destroyer,8,Rhm-B WT,win,1,Paris,3101,0,0,1493,1,3,23103
+12/11/2017,light,9,AMX 13 90,win,0,Cliff,275,2282,0,1046,0,0,9017
+12/11/2017,heavy,8,T26E5,win,1,Redshire,1976,1706,390,1565,0,4,84399
+12/11/2017,heavy,8,T26E5,loss,0,Winterberg,1766,797,240,780,0,2,50959
+12/11/2017,tank destroyer,10,Jp Pz E100,loss,0,Highway,1520,465,1170,507,0,2,-12832
+12/11/2017,tank destroyer,10,Jp Pz E100,win,0,Siegfried Line,3957,1032,600,1370,0,4,18707
+12/11/2017,heavy,8,T26E5,win,0,Erlenberg,247,171,250,890,0,0,19218
+12/11/2017,heavy,9,AMX 50 120,loss,0,Pilsen,2066,89,240,498,0,0,2965
+12/11/2017,medium,9,M46 Patton,loss,0,Steppes,1714,1109,2500,612,0,1,-11620
+12/11/2017,medium,7,T-43,win ,1,Sacred Valley,1545,558,240,1260,0,3,28916
+12/11/2017,SPG,9,M40/M43,loss,0,Fiery Salient,967,489,0,198,0,0,-2878
+12/11/2017,medium,10,E50M,loss,0,Sand River,3630,457,240,755,0,4,-3665
+12/11/2017,heavy,8,T26E5,win,1,Arctic Region,2031,41,1620,1202,1,2,62504
+12/11/2017,heavy,10,T110E5,lost,0,Swamp,1121,727,1130,266,0,0,-12261
+12/11/2017,medium,6,Strv 74,win,0,Fjords,917,0,0,807,0,1,11720
+12/11/2017,light,9,AMX 13 90,lost,0,Murovanka,509,868,0,267,0,0,1650
+12/11/2017,medium,8,T-54 mod.1,lost,0,Overlord,504,62,0,225,0,0,11543
+12/11/2017,heavy,6,KV-2,win,1,Redshire,917,453,150,909,0,1,16949
+12/11/2017,medium,10,M48 Patton,win,0,Pilsen,1595,0,440,936,0,1,694
+12/11/2017,heavy,10,T110E5,win,1,Tundra,2795,34,950,1169,5,4,6629
+12/11/2017,heavy,10,T110E5,win,1,Paris,2139,2426,780,1436,12,1,15404
+12/11/2017,heavy,10,T110E5,win,1,Mines,1668,0,800,341,0,0,24702
+12/11/2017,heavy,10,T110E5,lost,0,Mountain Pass,4393,0,2710,989,0,4,15681
+12/11/2017,medium,8,T-54 mod.1,lost,0,Live Oaks,806,230,0,426,0,0,19827
+12/11/2017,heavy,10,T110E5,win,0,Ruinberg,2806,2570,350,1305,0,1,2221
+12/11/2017,heavy,10,T110E5,win,0,Highway,849,0,0,792,0,0,-10047
+13/11/2017,heavy,8,T26E5,lost,0,Malinovka,1506,1061,220,648,0,0,45111
+13/11/2017,medium,8,T-54 mod.1,lost,0,Murovanka,708,0,790,258,0,0,15389
+13/11/2017,medium,8,FV4202,lost,0,Cliff,843,230,585,438,0,1,20669
+13/11/2017,heavy,8,T34,win,0,Steppes,1177,1259,490,966,0,1,46045
+13/11/2017,heavy,8,T26E5,lost,0,Sacred Valley,0,0,0,117,0,0,1403
+14/11/2017,heavy,8,T26E5,lost,0,Siegfried Line,710,256,240,296,0,0,22808
+14/11/2017,heavy,8,T26E5,win,0,Malinovka,1404,1490,1150,1328,0,1,59649
+14/11/2017,heavy,8,T26E5,lost,0,Ensk,990,0,1260,416,0,1,23586
+14/11/2017,heavy,8,T26E5,lost,0,Lakeville,441,0,0,296,0,0,10073
+17/11/2017,heavy,8,T26E5,lost,0,Murovanka,1104,0,480,471,0,0,27837
+17/11/2017,medium,8,T-54 mod.1,win,1,El Halluf,2924,311,2270,1890,1,2,79418
+17/11/2017,heavy,8,T26E5,lost,0,Windstorm,483,381,400,497,0,0,18124
+17/11/2017,medium,8,T-54 mod.1,win,1,Swamp,1784,392,490,1107,0,1,55429
+17/11/2017,medium,7,T-43,win,0,Westfield,0,0,0,444,0,0,3725
+17/11/2017,heavy,8,T26E5,win,0,Ensk,1115,0,445,1310,0,3,47449
+17/11/2017,medium,8,T-54 mod.1,win,0,Serene Coast,1722,398,900,1328,0,5,56907
+17/11/2017,medium,8,T-54 mod.1,win,1,Malinovka,0,573,240,656,0,0,16084
+17/11/2017,medium,8,T-54 mod.1,win,0,Steppes,902,240,1897,1274,0,1,54625
+17/11/2017,medium,8,T-54 mod.1,win,0,Mines,0,470,1140,641,0,0,28151
+17/11/2017,medium,8,T-54 mod.1,lost,0,Himmelsdorf,1489,252,2140,524,0,0,35199
+17/11/2017,tank destroyer,10,Jp Pz E100,draw,0,Nebelburg,0,0,0,417,0,0,-20619
+17/11/2017,heavy,10,T110E5,lost,0,Westfield,762,0,890,278,0,0,-14366
+17/11/2017,tank destroyer,8,Rhm-B WT,win,1,Murovanka,992,107,0,992,0,1,8896
+17/11/2017,medium,8,T-54 mod.1,lost,0,Live Oaks,770,0,2140,339,0,0,20038
+17/11/2017,tank destroyer,7,T25/2,win,0,Overlord,763,335,240,869,0,0,10762
+17/11/2017,heavy,8,T26E5,win,0,Airfield,1691,776,680,1323,1,0,58428
+17/11/2017,medium,8,T-54 mod.1,lost,0,Abbey,1770,873,1490,840,0,1,45926
+17/11/2017,medium,8,T-54 mod.1,win,0,Tundra,677,100,390,942,0,1,28967
+17/11/2017,heavy,8,T26E5,win,1,Steppes,1243,955,0,1178,0,2,55325
+17/11/2017,medium,8,T-54 mod.1,lost,0,Stalingrad,3000,0,2040,953,0,3,62159
+17/11/2017,medium,8,T-54 mod.1,win,1,Ensk,2913,2050,1690,1905,1,1,98175
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Nebelburg,626,436,0,234,0,0,-16666
+17/11/2017,medium,8,T-54 mod.1,win,0,Kharkov,758,0,400,846,0,0,26120
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,1,Sacred Valley,3515,142,2350,569,0,0,15457
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Fiery Salient,462,420,3820,317,0,0,-10765
+17/11/2017,medium,8,T-54 mod.1,win,0,Erlenberg,256,224,720,660,0,0,22013
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Redshire,2383,0,3000,348,0,0,-3213
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Airfield,1205,219,1380,371,0,0,-13105
+17/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Serene Coast,1122,533,3240,1082,7,0,-10176
+17/11/2017,medium,8,T-54 mod.1,win,0,Kharkov,0,434,1090,761,0,0,13995
+17/11/2017,heavy,10,Pz.Kpfw.VII,win,1,Highway,3537,2029,5960,1458,4,0,25412
+17/11/2017,heavy,10,Pz.Kpfw.VII,win,0,Tundra,2808,2630,2170,861,0,1,20085
+18/11/2017,heavy,10,Pz.Kpfw.VII,win,0,Live Oaks,1710,263,2330,1055,7,0,-1469
+18/11/2017,light,9,AMX 13 90,lost,0,Paris,260,1685,0,417,0,0,2973
+18/11/2017,heavy,10,Pz.Kpfw.VII,lost,0,Nebelburg,3379,3058,930,882,5,3,12286
+18/11/2017,heavy,10,Pz.Kpfw.VII,win,1,Westfield,1707,298,2550,1005,0,0,15712
+18/11/2017,heavy,8,T26E5,lost,0,Abbey,1270,0,320,557,0,1,31758
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,1,Steppes,885,0,1850,375,0,2,27760
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Highway,3019,30,940,555,0,0,53350
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Winterberg,0,0,0,681,0,0,16185
+24/11/2017,heavy,10,Pz.Kpfw.VII,win,1,Windstorm,3350,1237,1940,1457,10,1,29036
+24/11/2017,tank destroyer,8,WZ-120-1G,win,1,Airfield,977,135,539,800,0,0,38247
+24/11/2017,medium,7,T-43,lost,0,Fiery Salient,165,0,340,77,0,0,-1217
+24/11/2017,tank destroyer,8,WZ-120-1G,win,1,El Halluf,2851,568,780,1487,0,2,61138
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Ensk,813,0,0,155,0,0,16973
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Steppes,685,0,0,882,0,1,25783
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Murovanka,2256,212,0,456,0,1,35800
+24/11/2017,medium,7,T-43,lost,0,Swamp,619,0,0,269,0,1,1530
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Malinovka,1282,41,0,864,0,0,29860
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Overlord,2575,0,0,560,1,1,56590
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Sacred Valley,1240,1240,154,0,0,0,42600
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Mines,1893,0,1210,1323,0,2,66636
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Steppes,1007,0,730,936,0,0,45656
+24/11/2017,heavy,8,T26E5,lost,0,Erlenberg,772,491,390,387,0,0,31599
+24/11/2017,tank destroyer,8,WZ-120-1G,win,1,Murovanka,4116,0,0,1694,0,5,95462
+24/11/2017,tank destroyer,8,WZ-120-1G,win,1,Airfield,194,0,0,0,0,0,28160
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Fishermans Bay,1071,426,560,366,0,1,27764
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Tundra,413,261,0,342,0,0,19495
+24/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Westfield,0,0,0,278,0,0,8824
+24/11/2017,heavy,10,Pz.Kpfw.VII,win,1,Kharkov,3133,121,7300,1383,0,1,17666
+24/11/2017,tank destroyer,8,WZ-120-1G,win,0,Sacred Valley,477,0,390,792,0,0,32369
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Serene Coast,1063,528,880,497,0,1,24963
+25/11/2017,tank destroyer,8,Strv S1,win,1,Ensk,1443,124,0,911,0,1,43744
+25/11/2017,tank destroyer,8,WZ-120-1G,win,0,Fjords,1679,929,320,1178,0,0,48288
+25/11/2017,tank destroyer,8,Strv S1,lost,0,Prokhorovka,823,0,0,312,0,0,17363
+25/11/2017,heavy,10,Pz.Kpfw.VII,win,1,Nebelburg,2949,213,6970,1178,10,0,25491
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Malinovka,431,0,0,203,0,0,4332
+25/11/2017,medium,8,T-54 mod.1,win,1,Fishermans Bay,2307,1020,780,1653,1,2,71865
+25/11/2017,tank destroyer,8,Strv S1,lost,0,Westfield,1921,315,230,537,0,0,37597
+25/11/2017,medium,7,T-43,win,0,Ensk,551,0,0,731,0,0,8870
+25/11/2017,heavy,8,T26E5,win,0,Murovanka,244,605,470,338,0,0,27461
+25/11/2017,tank destroyer,8,WZ-120-1G,win,0,Steppes,1574,671,490,1166,0,1,50635
+25/11/2017,tank destroyer,8,Strv S1,lost,0,El Halluf,2616,78,0,726,0,2,41481
+25/11/2017,tank destroyer,10,Jp Pz E100,win,1,Malinovka,2654,2454,550,1055,0,1,28288
+25/11/2017,tank destroyer,8,Strv S1,win,1,Redshire,1489,512,0,1007,0,2,43982
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Siegfried Line,876,1215,790,242,0,0,30059
+25/11/2017,medium,6,Strv 74,win,1,Arctic Region,1098,141,0,1076,0,6,23186
+25/11/2017,medium,6,Strv 74,win,0,Lakeville,585,0,250,615,0,0,12220
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Winterberg,0,0,0,105,0,0,3250
+25/11/2017,heavy,8,T26E5,lost,0,Ensk,891,324,0,588,0,1,27243
+25/11/2017,medium,8,T-54 mod.1,win,0,Malinovka,786,390,0,1122,0,0,29109
+25/11/2017,medium,8,T-54 mod.1,win,1,Redshire,970,972,0,965,0,0,47283
+25/11/2017,tank destroyer,8,Strv S1,lost,0,Fjords,355,0,0,150,0,0,13016
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Prokhorovka,680,3100,272,1240,0,2,55327
+25/11/2017,tank destroyer,8,WZ-120-1G,lost,0,Cliff,397,0,0,231,0,0,3633
+25/11/2017,tank destroyer,8,Strv S1,lost,0,Abbey,2953,0,240,717,0,2,68757
+25/11/2017,medium,8,T-54 mod.1,win,1,Kharkov,2058,34,1280,1511,0,3,60603
+10/12/2017,tank destroyer,8,Strv S1,win,0,Highway,396,0,0,617,0,0,26144
+10/12/2017,medium,7,T-43,lost,0,Westfield,737,1277,135,558,0,1,13717
+10/12/2017,medium,7,T-43,lost,0,Fishermans Bay,210,383,0,173,0,0,1022
+10/12/2017,medium,7,T-43,win,1,Winterberg,1992,50,480,1479,1,4,27708
+,,,,,,,,,,,,,

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Gabriel Oana - Hands on R</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on Gabriel Oana - Hands on R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hands on R</title>
+      <link>/2017/12/hands-on-r/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/hands-on-r/</guid>
+      <description>This is a test with the purpose of learning how to handle R Markdown .
+Currently it is in development.
+I can insert some code chunk in here:
+dplyr %&amp;gt;% do_something_cool  </description>
+    </item>
+    
+  </channel>
+</rss>

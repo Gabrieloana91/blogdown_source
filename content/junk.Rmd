@@ -1,5 +1,0 @@
----
-title: "junk"
----
-
-Here is the [homework](../junk/homework.pdf)

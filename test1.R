@@ -10,3 +10,6 @@ setwd("C:\\Users\\GabzPC\\Documents\\blogdown_source")
 build_site()
 
 serve_site()
+
+
+new_post(title = "tester1", ext = ".Rmd")
