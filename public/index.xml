@@ -51,12 +51,12 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>test page</title>
+      <title>junk</title>
       <link>/junk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/junk/</guid>
-      <description>Here is the homework</description>
+      <description>Here is the [World of Tanks] file (../junk/raw_data.csv)</description>
     </item>
     
   </channel>

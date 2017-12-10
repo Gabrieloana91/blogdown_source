@@ -6,6 +6,6 @@ setwd("C:\\Users\\GabzPC\\Documents\\blogdown_source")
 
 # 2. First Build ----------------------------------------------------------
 
-new_site()
-
+# new_site()
+build_site()
 
