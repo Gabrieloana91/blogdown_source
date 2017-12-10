@@ -5,4 +5,4 @@ date: "10 December 2017"
 output: html_document
 ---
 
-Here is the [homework](junk/raw_data.csv)
+Here is the [homework](../junk/raw_data.csv)
