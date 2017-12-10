@@ -69,4 +69,8 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>/junk/</loc>
+  </url>
+  
 </urlset>
