@@ -12,12 +12,27 @@
     
     
     <item>
+      <title>Data Visualization - ggplot and ggplotly</title>
+      <link>/2017/12/ggplot-and-ggplotly/</link>
+      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/ggplot-and-ggplotly/</guid>
+      <description>What is the point of collecting data if there are no actions taken from it?
+Instead of the team reading endless blocks of text, it is often much easier to read a graph and assess the performance / problems.
+Analysts should always express the key insights as understandable as possible for the rest of the team which might not be acustomed with the analytic jargon.</description>
+    </item>
+    
+    <item>
       <title>Hands on R</title>
       <link>/2017/12/tester1/</link>
       <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/12/tester1/</guid>
-      <description>The purpose of this blog is to document all cool stuff I do in my job. The data used on this blog is data I have collected from my World of Tanks game play. (Disclaimer: I am not the best. Not the worst either!) I am going to put chunks of the data I am using for you to see how the data looks like everytime I am showcasing something new.</description>
+      <description>The purpose of this blog is to document all cool stuff I do in my job. A few technical aspects about the software I use:
+- R Studio Version 1.0.153
+- R Version 3.4.1
+- Windows 10 - 64 bit
+The data used on this blog is data I have collected from my World of Tanks game play. (Disclaimer: I am not the best. Not the worst either!) All the data I collect is available here.</description>
     </item>
     
   </channel>

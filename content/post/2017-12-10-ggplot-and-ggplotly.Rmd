@@ -1,0 +1,73 @@
+---
+title: Data Visualization - ggplot and ggplotly
+author: ~
+date: '2017-12-10'
+slug: ggplot-and-ggplotly
+categories: [Data Visualization, R]
+tags: [Data Visualization, R, ggplot2, plotly, ggplotly]
+---
+
+What is the point of collecting data if there are no actions taken from it?  
+Instead of the team reading endless blocks of text, it is often much easier to read a graph and assess the performance / problems.   
+Analysts should always express the key insights as understandable as possible for the rest of the team which might not be acustomed with the analytic jargon. Here is where data visualization is coming into play as this should be a very strong asset each analyst should posess.  
+   
+  
+Lets have a look into "ggplot" first.  
+To do this, you will have to install the appropriate package. 
+
+```
+install.packages("ggplot2")
+install.packages("ggthemes")
+install.packages("reshape2")
+install.packages("plotly")
+library("ggplot2")
+library("ggthemes")
+library("reshape2")
+library("plotly")
+```
+
+A quick note on the dataset. The data is from World of Tanks and it gives details about the each game I have played. 
+If you would like to download the data for reference, press [here](../data_files/raw_data.csv)
+
+```
+win_rate <- df %>% 
+  group_by(session) %>%
+  summarise(games_played = length(game_number),
+            win_rate = round(length(game_number[outcome == "win"]) / length(game_number)*100,2)) %>% 
+  melt(id.vars = 1)
+
+win_rate$variable <- factor(win_rate$variable, levels = c("games_played", "win_rate"), 
+                            labels = c("Games Played", "Win Rate (%)"))
+
+P1 <- ggplot(win_rate, aes(session, value,  fill=variable))+
+  geom_bar(stat = "identity", position = "dodge")+
+  scale_fill_tableau(palette = "tableau10")+
+  scale_x_continuous(name = "Session", breaks = 1:max(win_rate$session))+
+  scale_y_continuous(name = "")+
+  labs(title = "Win Rate Per Session")+
+  theme(plot.title = element_text(hjust = 0.5))
+  
+```
+
+The plot below uses ggplot to show a summary of my win rates in the tanks labelled premium (purchased or earned in competitions) over the days (sessions) I was playing.
+
+```{r, echo = F, include = F}
+source("C:\\Users\\GabzPC\\Documents\\blogdown_source\\controller_file.R")
+```
+
+```{r, echo = F}
+P1
+```
+
+Currently, the plot is static. A few more pieces of information could be added to actually show the values on each bar, however, the graph is still a static graph (the user cannot interact with it).  
+To solve this problem, "plotly" can be used. Plotly can take any graph created with ggplot and transform it into an interactive plot.  
+For this the "plotly" package is required. 
+  
+  
+```{r , cache=FALSE, comment=FALSE, warning=FALSE, echo = F, message=F}
+ggplotly(P1)
+```
+
+The graph is now interactive.  
+This helps analysts to explore data especially when dealing with large datasets. This package is also particularly useful one posting results and wanting the audience to
+interact with the plots / data. 
