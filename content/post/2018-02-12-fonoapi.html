@@ -1,0 +1,86 @@
+---
+title: FonoAPI - Mobile Devices Specifications 
+subtitle: If you spend an hour now, you can save five later - Rami Hassan
+author: ~
+date: '2018-01-12'
+slug: fonoapi
+categories: [R]
+tags: [API, R]
+---
+
+
+
+<p>Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon <a href="https://fonoapi.freshpixl.com/">FonoApi</a>. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built. Their library is very large (includes very old phones like Nokia 5110 - released in 1998) and data is retrieved very fast which is really nice, however, they did not have a method of retrieving data using R.</p>
+<p>At first, I must admit, I was lazy and used their Python scripts which did the job amazingly but then I decided to re-write all this in R because I have become more familiar with R than Python in the last year (this blog is powered by R Markdown alone).</p>
+<p>So, I have decided the best solution for me was to create a function into which I can input the device type or device brand (or both) and the token you get from their website and obtain a dataset containing information about the said device.</p>
+<p>If you would like to have a shot at this, the script can be found here: <a href="https://github.com/Gabrieloana91/FonoAPI-R-Script">GabrielOana - FonoAPI Script</a></p>
+<div id="r-code" class="section level2">
+<h2>R Code</h2>
+<pre class="r"><code>get_device &lt;- function(device = NULL, brand = NULL, token){
+  
+  if(length(nchar(token)) == 0){
+    stop(&quot;Insert a valid token from https://fonoapi.freshpixl.com/&quot;)
+  }
+  
+  # Parameters
+  library(httr)
+  library(jsonlite)
+  library(dplyr)
+  url = &quot;https://fonoapi.freshpixl.com/v1/getdevice&quot;
+
+  # Clean-UP
+  device &lt;- tolower(device)
+  brand &lt;- tolower(brand)
+  
+  # Conditional clause if brand or device (or both are chosen)
+  if(length(nchar(brand)) == 0 &amp; length(nchar(device)) != 0){
+    
+    param &lt;- list(token = token,
+                  brand = &quot;&quot;,
+                  device = device)
+    
+  } else if(length(nchar(brand)) != 0 &amp; length(nchar(device)) == 0){
+    
+    param &lt;- list(token = token,
+                  brand = brand,
+                  device = &quot; &quot;)
+    
+  } else if(length(nchar(brand)) != 0 &amp; length(nchar(device)) != 0){
+    
+    param &lt;- list(token = token,
+                  brand = brand,
+                  device = device)
+  } else{
+    
+    stop(&quot;=== Insert a device/brand and the correct API Key from https://fonoapi.freshpixl.com/ ===&quot;)
+    
+  }
+  
+  # Transform the parameters into JSON format
+  param &lt;- toJSON(param)
+  param &lt;- gsub(pattern = &#39;\\[&#39;, replacement = &quot;&quot;, x = param)
+  param &lt;- gsub(pattern = &#39;\\]&#39;, replacement = &quot;&quot;, x = param)
+  
+  # API Call
+  
+  # fileName &lt;- fromJSON(prettify(POST(url = url, add_headers(.headers = c(&quot;Content-Type&quot;=&quot;application/json&quot;)), body = param)))
+  fileName &lt;- POST(url = url, add_headers(.headers = c(&quot;Content-Type&quot;=&quot;application/json&quot;)), body = param)
+  
+  # Warning + Error Messages
+  temp &lt;- content(fileName)
+  if(length(nchar(temp$message)) &gt; 0){
+    stop(temp$message)
+  }
+  
+  # Data Structure
+  fileName &lt;- suppressMessages(fromJSON(prettify(fileName)))
+  
+  devices_list &lt;&lt;- fileName %&gt;% 
+    separate(internal, into = c(&quot;internal_memory&quot;, &quot;ram_memory&quot;, &quot;ram_memory2&quot;), sep = &quot;,&quot;, extra = &quot;drop&quot;,  fill = &quot;right&quot;) %&gt;% 
+    mutate(ram_memory = gsub(&quot;RAM&quot;,&quot;&quot;,coalesce(ram_memory2, ram_memory))) %&gt;% 
+    select(-ram_memory2) %&gt;% 
+    mutate(ram_memory = gsub(&quot;RAM DDR3&quot;,&quot;&quot;, ram_memory)) %&gt;% 
+    mutate(ram_memory = gsub(&quot;DDR3&quot;,&quot;&quot;, ram_memory)) 
+    
+}</code></pre>
+</div>

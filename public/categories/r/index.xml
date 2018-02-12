@@ -6,10 +6,19 @@
     <description>Recent content in R on Gabriel Oana - Hands on R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FonoAPI - Mobile Devices Specifications</title>
+      <link>/2018/01/fonoapi/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/01/fonoapi/</guid>
+      <description>Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon FonoApi. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built.</description>
+    </item>
     
     <item>
       <title>Data Visualization - ggplot and ggplotly</title>

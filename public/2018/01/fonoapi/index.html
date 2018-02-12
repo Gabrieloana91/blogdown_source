@@ -1,6 +1,8 @@
 
 
   
+    
+  
 
 
   
@@ -20,7 +22,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31.1 with theme Tranquilpeak 0.4.3-BETA">
-    <title>About</title>
+    <title>FonoAPI - Mobile Devices Specifications</title>
     <meta name="author" content="Gabriel Oana">
     <meta name="keywords" content="">
 
@@ -28,15 +30,15 @@
     
 
     
-    <meta name="description" content="This is a &ldquo;hello world&rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.">
-    <meta property="og:description" content="This is a &ldquo;hello world&rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.">
+    <meta name="description" content="Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon FonoApi. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built.">
+    <meta property="og:description" content="Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon FonoApi. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built.">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="About">
-    <meta property="og:url" content="/about/">
+    <meta property="og:title" content="FonoAPI - Mobile Devices Specifications">
+    <meta property="og:url" content="/2018/01/fonoapi/">
     <meta property="og:site_name" content="Gabriel Oana - Hands on R">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Gabriel Oana - Hands on R">
-    <meta name="twitter:description" content="This is a &ldquo;hello world&rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.">
+    <meta name="twitter:description" content="Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon FonoApi. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built.">
     
     
 
@@ -71,7 +73,7 @@
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="2">
+      <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="/">Gabriel Oana - Hands on R</a>
@@ -91,7 +93,7 @@
   
 </header>
 
-      <nav id="sidebar" data-behavior="2">
+      <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -191,7 +193,7 @@
 
       
 
-      <div id="main" data-behavior="2"
+      <div id="main" data-behavior="5"
         class="
                hasCoverMetaIn
                ">
@@ -201,32 +203,125 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      About
+      FonoAPI - Mobile Devices Specifications
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2016-05-05T21:48:51-07:00">
+      <time itemprop="datePublished" datetime="2018-01-12T00:00:00Z">
         
-  May 5, 2016
+  January 12, 2018
 
       </time>
     
     
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="/categories/r">R</a>
+    
+  
+
   </div>
 
 </div>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>This is a &ldquo;hello world&rdquo; example website for the <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> package. The theme was forked from <a href="https://github.com/jrutheiser/hugo-lithium-theme">@jrutheiser/hugo-lithium-theme</a> and modified by <a href="https://github.com/yihui/hugo-lithium-theme">Yihui Xie</a>.</p>
+              <p>Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon <a href="https://fonoapi.freshpixl.com/">FonoApi</a>. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built. Their library is very large (includes very old phones like Nokia 5110 - released in 1998) and data is retrieved very fast which is really nice, however, they did not have a method of retrieving data using R.</p>
+<p>At first, I must admit, I was lazy and used their Python scripts which did the job amazingly but then I decided to re-write all this in R because I have become more familiar with R than Python in the last year (this blog is powered by R Markdown alone).</p>
+<p>So, I have decided the best solution for me was to create a function into which I can input the device type or device brand (or both) and the token you get from their website and obtain a dataset containing information about the said device.</p>
+<p>If you would like to have a shot at this, the script can be found here: <a href="https://github.com/Gabrieloana91/FonoAPI-R-Script">GabrielOana - FonoAPI Script</a></p>
+<div id="r-code" class="section level2">
+<h2>R Code</h2>
+<pre class="r"><code>get_device &lt;- function(device = NULL, brand = NULL, token){
+  
+  if(length(nchar(token)) == 0){
+    stop(&quot;Insert a valid token from https://fonoapi.freshpixl.com/&quot;)
+  }
+  
+  # Parameters
+  library(httr)
+  library(jsonlite)
+  library(dplyr)
+  url = &quot;https://fonoapi.freshpixl.com/v1/getdevice&quot;
+
+  # Clean-UP
+  device &lt;- tolower(device)
+  brand &lt;- tolower(brand)
+  
+  # Conditional clause if brand or device (or both are chosen)
+  if(length(nchar(brand)) == 0 &amp; length(nchar(device)) != 0){
+    
+    param &lt;- list(token = token,
+                  brand = &quot;&quot;,
+                  device = device)
+    
+  } else if(length(nchar(brand)) != 0 &amp; length(nchar(device)) == 0){
+    
+    param &lt;- list(token = token,
+                  brand = brand,
+                  device = &quot; &quot;)
+    
+  } else if(length(nchar(brand)) != 0 &amp; length(nchar(device)) != 0){
+    
+    param &lt;- list(token = token,
+                  brand = brand,
+                  device = device)
+  } else{
+    
+    stop(&quot;=== Insert a device/brand and the correct API Key from https://fonoapi.freshpixl.com/ ===&quot;)
+    
+  }
+  
+  # Transform the parameters into JSON format
+  param &lt;- toJSON(param)
+  param &lt;- gsub(pattern = &#39;\\[&#39;, replacement = &quot;&quot;, x = param)
+  param &lt;- gsub(pattern = &#39;\\]&#39;, replacement = &quot;&quot;, x = param)
+  
+  # API Call
+  
+  # fileName &lt;- fromJSON(prettify(POST(url = url, add_headers(.headers = c(&quot;Content-Type&quot;=&quot;application/json&quot;)), body = param)))
+  fileName &lt;- POST(url = url, add_headers(.headers = c(&quot;Content-Type&quot;=&quot;application/json&quot;)), body = param)
+  
+  # Warning + Error Messages
+  temp &lt;- content(fileName)
+  if(length(nchar(temp$message)) &gt; 0){
+    stop(temp$message)
+  }
+  
+  # Data Structure
+  fileName &lt;- suppressMessages(fromJSON(prettify(fileName)))
+  
+  devices_list &lt;&lt;- fileName %&gt;% 
+    separate(internal, into = c(&quot;internal_memory&quot;, &quot;ram_memory&quot;, &quot;ram_memory2&quot;), sep = &quot;,&quot;, extra = &quot;drop&quot;,  fill = &quot;right&quot;) %&gt;% 
+    mutate(ram_memory = gsub(&quot;RAM&quot;,&quot;&quot;,coalesce(ram_memory2, ram_memory))) %&gt;% 
+    select(-ram_memory2) %&gt;% 
+    mutate(ram_memory = gsub(&quot;RAM DDR3&quot;,&quot;&quot;, ram_memory)) %&gt;% 
+    mutate(ram_memory = gsub(&quot;DDR3&quot;,&quot;&quot;, ram_memory)) 
+    
+}</code></pre>
+</div>
 
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/api/">API</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/r/">R</a>
+
+                  </div>
+                
               
             
             
@@ -244,7 +339,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/ggplot-and-ggplotly/" data-tooltip="Data Visualization - ggplot and ggplotly">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -262,19 +357,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/01/fonoapi/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/01/fonoapi/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/01/fonoapi/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -314,7 +409,7 @@
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="2">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         
   <div class="post-actions-wrap">
       <nav >
@@ -330,7 +425,7 @@
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/ggplot-and-ggplotly/" data-tooltip="Data Visualization - ggplot and ggplotly">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -348,19 +443,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/01/fonoapi/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/01/fonoapi/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/about/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/01/fonoapi/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -385,24 +480,24 @@
 
 
       </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="2">
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2Fabout%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2018%2F01%2Ffonoapi%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2Fabout%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2018%2F01%2Ffonoapi%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2Fabout%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2018%2F01%2Ffonoapi%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -565,9 +660,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = '\/about\/';
+          this.page.url = '\/2018\/01\/fonoapi\/';
           
-            this.page.identifier = '\/about\/'
+            this.page.identifier = '\/2018\/01\/fonoapi\/'
           
         };
         (function() {

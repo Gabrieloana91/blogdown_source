@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Gabriel Oana - Hands on R</title>
-    <link>/tags/r/</link>
-    <description>Recent content in R on Gabriel Oana - Hands on R</description>
+    <title>Api on Gabriel Oana - Hands on R</title>
+    <link>/tags/api/</link>
+    <description>Recent content in Api on Gabriel Oana - Hands on R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>/2018/01/fonoapi/</guid>
       <description>Recently, I had to look at different devices and their specs to build an idea about which are the best devices at the moment. As there are many types and manufacturers, I was inefficient at looking through each model on gsmarena and decided to look for a better solution. So I have stumbled upon FonoApi. This amazing website gives out tokens to use with their API via Python, Curl, jQuery or NodeJS to retrieve specifications about almost any device ever built.</description>
-    </item>
-    
-    <item>
-      <title>Data Visualization - ggplot and ggplotly</title>
-      <link>/2017/12/ggplot-and-ggplotly/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/2017/12/ggplot-and-ggplotly/</guid>
-      <description>What is the point of collecting data if there are no actions taken from it?
-Instead of the team reading endless blocks of text, it is often much easier to read a graph and assess the performance / problems.
-Analysts should always express the key insights as understandable as possible for the rest of the team which might not be acustomed with the analytic jargon.</description>
     </item>
     
   </channel>

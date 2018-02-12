@@ -9,8 +9,10 @@ setwd("C:\\Users\\GabzPC\\Documents\\blogdown_source")
 
 
 # 2. Post 2 - ggplot and ggplotly -----------------------------------------
-new_post(title = "ggplot_and_ggplotly", ext = ".Rmd")
+# new_post(title = "ggplot_and_ggplotly", ext = ".Rmd")
 
+# 3. Post 3 - fonoapi
+new_post(title = "FonoApi", ext = ".Rmd")
 
 # Final Compilation -------------------------------------------------------
 
